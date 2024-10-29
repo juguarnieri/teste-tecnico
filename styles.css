@@ -8,7 +8,7 @@
 
 .checkout-container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -19,6 +19,9 @@ header {
 
 header h1 {
     font-size: 2rem;
+}
+.hr-header{
+    width: 38rem;
 }
 
 header p {
@@ -66,16 +69,18 @@ header p {
 .ball-text {
     font-size: 0.9rem;
     color: #555;
+    align-items: center;
 }
 
 .checkout-main {
     display: flex;
-    gap: 20px;
+    gap: 3rem;
 }
 
 .checkout-content, .order-summary {
     padding: 20px;
     border-radius: 8px;
+    margin-top: -25px;
 }
 
 .contact-info h2, .delivery-info h2, .order-summary h2 {
@@ -97,7 +102,7 @@ header p {
 }
 
 .form-information.zip-code {
-    max-width: 100px;
+    max-width: 200px;
 }
 
 .form-information label {
@@ -116,7 +121,7 @@ header p {
     transition: border-color 0.3s;
 }
 
-.proceed-btn {
+.proceed {
     width: 100%;
     padding: 15px;
     border: none;
@@ -133,10 +138,11 @@ header p {
 .order-summary {
     width: 100%;
     font-family: Arial, sans-serif;
-    max-width: 500px;
-    padding: 20px;
+    max-width: 600px;
+    padding: 30px;
     border-radius: 8px;
     background-color: #ffff;
+    margin-top: -7.5rem;
 }
 
 .order-summary h2 {
@@ -153,9 +159,9 @@ hr {
 
 .item {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     border-bottom: 1px solid #fff;
-    padding: 10px 0;
+    padding: 15px 0;
     align-items: center;
 }
 
@@ -182,13 +188,14 @@ hr {
 
 .item-choices {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .choice label {
     display: block;
     font-size: 0.8rem;
     color: #666;
+    margin-top: 25px;
 }
 
 .choice select {
@@ -203,8 +210,21 @@ hr {
     cursor: pointer;
     border-radius: 4px;
     background-color: #fff;
+    border: 2px solid #d35400;
+    margin-bottom: 5px; /* Espaço entre quantidade e preço */
+    margin-top: 8px;
 }
 
+.quantity-controls button {
+    padding: 0 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid #d35400; 
+    color: #d35400; 
+    font-weight: bold; /
+}
 
 .item-quantity {
     display: flex;
@@ -216,17 +236,19 @@ hr {
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-bottom: 5px; /* Espaço entre quantidade e preço */
+    margin-bottom: 10px; /* Espaço entre quantidade e preço */
 }
 
 .price-item {
     font-weight: bold;
     font-size: 1rem;
     text-align: center;
-    margin-top: 5px; /* Ajuste de espaço entre quantidade e preço */
+    margin-top: 10px; /* Ajuste de espaço entre quantidade e preço */
 }
 .order-resume-total {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 10px;
 }
 
 .order-resume-total p {
@@ -242,18 +264,17 @@ hr {
 }
 
 .delete-item {
+    background: none;
     border: none;
     cursor: pointer;
     padding: 0;
     margin-left: 10px;
-    background: none;
-
+    margin-top: -10px;
 }
 
 .delete-item img {
     width: 18px;
     height: 18px;
-    justify-content: end;
 }
 
 .breadcrumb.orange {
@@ -286,6 +307,7 @@ hr {
     width: 18px;
     height: 18px;
 }
+
 .item-quantity {
     display: flex;
     flex-direction: column;
@@ -294,8 +316,9 @@ hr {
 
 .item-quantity label {
     font-size: 0.7rem;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     color: #555;
+    margin-top: 10px;
 }
 
 .quantity-controls {
