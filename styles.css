@@ -26,6 +26,10 @@ header p {
     font-size: 1rem;
 }
 
+.orange-p{
+    color: #d35400;
+}
+
 .checkout-container header {
     text-align: start;
     margin-bottom: 20px;
@@ -127,55 +131,175 @@ header p {
 }
 
 .order-summary {
-    flex: 1;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffff;
 }
 
-.itens- {
+.order-summary h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.item {
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.item img {
+    width: 60px;
+    height: 60px;
+}
+
+.item-details {
+    flex: 1;
+    color: #555;
+}
+
+.item-details h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+}
+
+.item-details p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.item-choices {
     display: flex;
     gap: 10px;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
 }
 
-.itens img {
-    width: 70px;
-    height: 70px;
+.choice label {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
 }
 
-.item-particular {
-    flex: 2;
+.choice select {
+    width: 100%;
+    padding: 5px;
+    font-size: 0.9rem;
 }
 
-.item-quantity, .item-price {
-    text-align: center;
-    font-weight: bold;
-}
-
-.order-summary-total {
+.item-quantity button {
+    padding: 0 8px;
     font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
+
+.item-quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px; /* Espaço entre quantidade e preço */
+}
+
+.price-item {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px; /* Ajuste de espaço entre quantidade e preço */
+}
+.order-resume-total {
+    margin-top: 20px;
+}
 
 .order-resume-total p {
     display: flex;
     justify-content: space-between;
+    font-size: 1rem;
+    margin: 5px 0;
 }
 
 .order-resume-total .total {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+.delete-item {
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    background: none;
+
+}
+
+.delete-item img {
+    width: 18px;
+    height: 18px;
+    justify-content: end;
+}
+
+.breadcrumb.orange {
+    color:#d35400;
+}
+
+.breadcrumb.gray {
+    color: gray;
+}
+
+.arrow {
+    color: gray;
+    margin-left: 5px;
+}
+
+.item-container {
+    display: flex;
+    align-items: center; 
+}
+
 .delete-item {
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
-    margin-left: 10px;
+    margin-left: 20 px;
 }
 
 .delete-item img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+}
+.item-quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-quantity label {
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
