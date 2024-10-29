@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.checkout-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header p {
+    color: #888;
+    font-size: 1rem;
+}
+
+.checkout-container header {
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.balls {
+    justify-content: start;
+    margin-top: 10px;
+    display: flex;
+    gap: 20px; 
+}
+
+.ball-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.ball {
+    color: #e74c3c;
+    background-color: #ffffff;
+    border: 1px solid #e74c3c;
+    padding: 12px 15px;
+    margin-bottom: 5px; 
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.ball.active {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.ball-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.checkout-main {
+    display: flex;
+    gap: 20px;
+}
+
+.checkout-content, .order-summary {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-info h2, .delivery-info h2, .order-summary h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.form-line {
+    display: flex;
+    gap: 20px;
+}
+
+.form-information {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.form-information.zip-code {
+    max-width: 100px;
+}
+
+.form-information label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-information input, .form-information select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.proceed-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #e67e22, #d35400);
+    color: #fff;
+    transition: box-shadow 0.3s;
+}
+
+.order-summary {
+    flex: 1;
+}
+
+.itens- {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.itens img {
+    width: 70px;
+    height: 70px;
+}
+
+.item-particular {
+    flex: 2;
+}
+
+.item-quantity, .item-price {
+    text-align: center;
+    font-weight: bold;
+}
+
+.order-summary-total {
+    font-size: 1rem;
+}
+
+
+.order-resume-total p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-resume-total .total {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.delete-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.delete-item img {
+    width: 20px;
+    height: 20px;
+}

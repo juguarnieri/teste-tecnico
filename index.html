@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 29-10</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="checkout-container">
+            <header>
+                <h1>Checkout</h1>
+                <p>Homepage / Clothing Category / Checkout</p>
+                <div class="balls">
+                    <div class="ball-container">
+                        <span class="ball active">1</span>
+                        <p class="ball-text">Delivery</p>
+                    </div>
+                    <div class="ball-container">
+                        <span class="ball">2</span>
+                        <p class="ball-text">Payment</p>
+                    </div>
+                    <div class="ball-container">
+                        <span class="ball">3</span>
+                        <p class="ball-text">Confirmation</p>
+                    </div>
+                </div>
+            </header>
+        </div>
+        
+        
+        <div class="checkout-main">
+            <div class="checkout-content">
+                <section class="contact-info">
+                    <h2>Contact Information</h2>
+                    <form>
+                        <div class="form-line">
+                            <div class="form-information">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name">
+                            </div>
+                            
+                            <div class="form-information">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Last Name e.g John, Mary">
+                            </div>
+                        </div>
+                        
+                        <div class="form-line">
+                            <div class="form-information">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="Your email@gmail.com">
+                            </div>
+                            
+                            <div class="form-information">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="+1-(0000 000 0000)">
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                
+                <section class="delivery-info">
+                    <h2>Delivery Information</h2>
+                    <form>
+                        <div class="form-line">
+                            <div class="form-information">
+                                <label>Delivery Date</label>
+                                <input type="text" placeholder="DD/MM/YYYY">
+                            </div>
+                            
+                            <div class="form-information">
+                                <label>Convenient Time</label>
+                                <select>
+                                    <option>1pm-9pm</option>
+                                    <option>9pm-9am</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-line">
+                            <div class="form-information">
+                                <label>City</label>
+                                <select>
+                                    <option>Alabama</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-information">
+                                <label>Address</label>
+                                <input type="text" placeholder="Click to find Address">
+                            </div>
+                            
+                            <div class="form-information zip-code">
+                                <label>Zip Code</label>
+                                <input type="text" placeholder="00000">
+                            </div>
+                        </div>
+                        
+                        <button class="proceed-btn">Proceed to Payment</button>
+                    </form>
+                </section>
+            </div>
+            
+            <aside class="order-summary">
+                <h2>Your Order</h2>
+                <hr>
+                <div class="itens">
+                    <img src="img/jacket.png" alt="Vintage Sport Jacket">
+                    <div class="item-particular">
+                        <h3>Vintage Sport Jacket</h3>
+                        <button class="delete-item">
+                            <img src="img/lixeira.png" alt="Delete">
+                        </button>
+                        <p>- Vintage Highschool Jock Bully<br>- 1960 Classic Edition</p>
+                        <div class="item-choices">
+                            <div class="choice">
+                                <label>Size</label>
+                                <select>
+                                    <option>Medium size</option>
+                                    <option>Small size</option>
+                                </select>
+                            </div>
+                            <div class="choice">
+                                <label>Colour</label>
+                                <select>
+                                    <option>Red</option>
+                                    <option>Pink</option>
+                                    <option>Black</option>
+                                    <option>Blue</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <button>-</button>
+                        <span>2</span>
+                        <button>+</button>
+                    </div>
+                    <div class="item-price">$165.00</div>
+                </div>
+                <hr>
+                
+                <div class="itens">
+                    <img src="img/blouse.png" alt="Pamela's Jacket">
+                    <div class="item-particular">
+                        <h3>Pamela's Jacket</h3>
+                        <button class="delete-item">
+                            <img src="img/lixeira.png" alt="Delete">
+                        </button>
+                        <p>- Vintage Winter WEARS<br>- 1975 Classic Edition</p>
+                        <div class="item-choices">
+                            <div class="choice">
+                                <label>Size</label>
+                                <select>
+                                    <option>Large size</option>
+                                    <option>Small size</option>
+                                </select>
+                            </div>
+                            <div class="choice">
+                                <label>Colour</label>
+                                <select>
+                                    <option>Pink</option>
+                                    <option>Red</option>
+                                    <option>Blue</option>
+                                    <option>Green</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-quantity">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <div class="item-price">$140.00</div>
+                </div>
+                <hr>
+                
+                <div class="order-resume-total">
+                    <p>Subtotal <span>$654.00</span></p>
+                    <p>Shipping <span>$64.00</span></p>
+                    <p>Vat, tax <span>$64.00</span></p>
+                    <p class="total">Total <span>$778.00</span></p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
